@@ -6,16 +6,13 @@
 
 <h4 align="center">Teste prático para a posição de Desenvolvedor Front-End Pleno na Big Bang Digital</h4>
 
-![screenshot](.github/idoctor.png)
-
-
 ## :information_source: Como usar
 
 Para clonar e executar esta aplicação, você vai precisar ter [Git](https://git-scm.com), [Node.js][nodejs] + [Yarn][yarn] instalados na sua máquina.
 
-From your command line:
+Da sua linha de comando:
 
-### Install
+### Instalação
 
 ```bash
 # Clone this repository

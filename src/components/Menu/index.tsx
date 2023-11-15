@@ -16,6 +16,7 @@ export default function Menu() {
       <ul>
         {menuTitle.map((item) => (
           <S.Content key={item.id}>
+            <S.Icon>{item.icon}</S.Icon>
             <li>{item.name}</li>
           </S.Content>
         ))}

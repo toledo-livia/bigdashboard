@@ -5,6 +5,13 @@ export const Nav = styled.nav`
   background-color: ${colors.grey9};
   position: relative;
   border-right: 1px solid ${colors.grey8};
+
+  @media (max-width: ${breakpoints.medium}) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5rem;
+  }
 `;
 
 export const Logo = styled.div`
@@ -64,5 +71,13 @@ export const Content = styled.div`
       animation: bounce 2s ease-in-out infinite;
       background-color: transparent;
     }
+  }
+`;
+
+export const Icon = styled.div`
+  display: none;
+
+  @media (max-width: ${breakpoints.medium}) {
+    display: flex;
   }
 `;

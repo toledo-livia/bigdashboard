@@ -39,6 +39,7 @@ export const font = {
   semiBold: 600,
   bold: 700,
   sizes: {
+    xxSmall: '0.9rem',
     xSmall: '1.2rem',
     small: '1.4rem',
     normal: '1.6rem',

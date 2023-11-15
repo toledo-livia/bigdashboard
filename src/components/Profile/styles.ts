@@ -21,7 +21,8 @@ export const Figure = styled.figure`
   @media (max-width: ${breakpoints.medium}) {
     height: 2.8rem;
     width: 2.8rem;
-    margin-left: 0.5rem;
+    margin-left: 0;
+    margin-bottom: 1rem;
   }
 
   img {
@@ -42,10 +43,20 @@ export const Name = styled.span`
   font-weight: ${font.bold};
   font-size: ${font.sizes.small};
   text-align: center;
+
+  @media (max-width: ${breakpoints.medium}) {
+    font-size: ${font.sizes.xxSmall};
+    text-align: start;
+  }
 `;
 
 export const Email = styled.span`
   color: ${colors.grey6};
   font-size: ${font.sizes.small};
   text-align: center;
+
+  @media (max-width: ${breakpoints.medium}) {
+    font-size: ${font.sizes.xxSmall};
+    text-align: start;
+  }
 `;

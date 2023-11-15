@@ -1,41 +1,20 @@
-import { Routes as ReactRouterDomRoutes, Route } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
-import { Home } from '../pages';
+import Home from '../pages/Home';
 
-import { PrivateRoute, PublicRoute } from './Routes';
+import Menu from '../components/Menu';
+import Sidebar from '../components/Sidebar';
 
-interface Routes {
-  path: string;
-  isPrivate: boolean;
-  element: JSX.Element;
-}
+import * as S from './styles';
 
-const routes: Routes[] = [
-  {
-    path: '/',
-    isPrivate: false,
-    element: <Home />,
-  },
-];
-
-export function Routes() {
+export function Router() {
   return (
-    <ReactRouterDomRoutes>
-      {routes.map(({ path, isPrivate, element }) =>
-        isPrivate ? (
-          <Route
-            key={path}
-            path={path}
-            element={<PrivateRoute>{element}</PrivateRoute>}
-          />
-        ) : (
-          <Route
-            key={path}
-            path={path}
-            element={<PublicRoute>{element}</PublicRoute>}
-          />
-        ),
-      )}
-    </ReactRouterDomRoutes>
+    <S.Container>
+      <Menu />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Sidebar />
+    </S.Container>
   );
 }

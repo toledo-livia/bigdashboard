@@ -18,29 +18,22 @@
     "react",
     "react-hooks",
     "@typescript-eslint",
-    "prettier",
-    "@typescript-eslint/parser"
+    "prettier"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "react/jsx-one-expression-per-line": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "no-use-before-define": "off",
+    "camelcase": "off",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [
-      1,
-      {
-        "extensions": [
-          ".tsx"
-        ]
-      }
-    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
     "import/prefer-default-export": "off",
-    "@typescript-eslint/explicit-function-return-type": [
-      "error",
-      {
-        "allowExpressions": true
-      }
-    ],
+    "react/prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/react-in-jsx-scope": "off",
+    "array-callback-return": "off",
+    "consistent-return": "off",
     "import/extensions": [
       "error",
       "ignorePackages",

@@ -1,20 +1,31 @@
+import Card from '../../components/Card';
+import { updates } from '../../mocks/updates';
 import * as S from './styles';
 
 export default function Home() {
   return (
-    <S.Container>
-      <h1>Welcome to my React Architecture</h1>
-      <p>
-        This project was created to be used as the basis for React applications.
-        The architecture was designed aiming at the organization and scalability
-        of the application, counting on the main libraries in the market.
-      </p>
-
-      <S.CreatedBy>
-        <span role="img" aria-label="heart">
-          Created with ❤️ by Lívia Toledo
-        </span>
-      </S.CreatedBy>
-    </S.Container>
+    <S.Main>
+      <section>
+        <S.Top>
+          <div>
+            <h2>Painel</h2>
+            <p>As últimas atualizações de hoje</p>
+          </div>
+          <div>
+            <S.SearchIcon />
+            <S.SaveIcon />
+          </div>
+        </S.Top>
+        <S.Section>
+          {updates.map((item, index) => (
+            <Card
+              key={index}
+              title={item.title}
+              description={item.description}
+            />
+          ))}
+        </S.Section>
+      </section>
+    </S.Main>
   );
 }

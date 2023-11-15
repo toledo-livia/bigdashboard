@@ -1,47 +1,45 @@
 import styled from 'styled-components';
-import { font, breakpoints } from '../../styles/theme';
+import { FaSearch, FaRegBookmark } from 'react-icons/fa';
+import { breakpoints, colors, font } from '../../styles/theme';
 
-export const Container = styled.div`
-  height: 100vh;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  max-width: 110rem;
-  margin: 0 auto;
-
-  p {
-    text-align: center;
-    margin-top: 3rem;
-    font-size: 2rem;
-    font-weight: ${font.light};
-    line-height: ${font.lineHeight.xxsmall};
-
-    @media (max-width: ${breakpoints.medium}) {
-      font-size: 1.6rem;
-    }
-  }
+export const Main = styled.main`
+  background-color: ${colors.grey9};
+  padding: 3rem 3rem;
+  overflow-y: scroll;
 
   @media (max-width: ${breakpoints.medium}) {
-    padding: 2.4rem;
-
-    h1 {
-      font-size: ${font.sizes.heading04};
-      text-align: center;
-    }
+    font-size: ${font.sizes.small};
   }
 `;
 
-export const CreatedBy = styled.div`
-  margin-top: 2.7rem;
+export const Top = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
-  span {
-    font-size: 1.4rem;
-  }
+export const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+`;
 
-  @media (max-width: ${breakpoints.medium}) {
-    margin-top: 3rem;
-  }
+export const SearchIcon = styled(FaSearch)`
+  font-size: ${font.sizes.heading01};
+  border: 1px solid ${colors.grey8};
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  color: ${colors.grey5};
+`;
+
+export const SaveIcon = styled(FaRegBookmark)`
+  font-size: ${font.sizes.heading01};
+  border: 1px solid ${colors.grey8};
+  padding: 0.8rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s linear;
+  color: ${colors.grey5};
 `;

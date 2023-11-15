@@ -15,14 +15,22 @@ export const spacings = {
   space14: '9.6rem',
 } as const;
 
-export const primaryColors = {
+export const colors = {
+  background: 'hsl(212, 33%, 89%)',
+  black: '#1D1D1D',
   white: '#FFFFFF',
-  black: '#000000',
-} as const;
-
-export const secondaryColors = {
-  yellow: '#FFCC33',
-  green: '#63BA68',
+  primary: '#B5B8B1',
+  secondary: 'hsl(0, 0%, 81%)',
+  grey1: 'hsl(209, 61%, 16%)',
+  grey2: 'hsl(211, 39%, 23%)',
+  grey3: 'hsl(209, 34%, 30%)',
+  grey4: 'hsl(209, 28%, 39%)',
+  grey5: 'hsl(210, 22%, 49%)',
+  grey6: 'hsl(209, 23%, 60%)',
+  grey7: 'hsl(211, 27%, 70%)',
+  grey8: 'hsl(210, 31%, 80%)',
+  grey9: 'hsl(212, 33%, 89%)',
+  grey10: 'hsl(210, 36%, 96%)',
 } as const;
 
 export const font = {

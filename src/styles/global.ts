@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { font } from './theme';
+import { colors, font } from './theme';
 
 export default createGlobalStyle`
    * {
@@ -15,7 +15,8 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
-    font-size: 1.6rem;
+    font-size: ${font.sizes.normal};
+    background-color: ${colors.background}
   }
 
   body, input, textarea, button {
